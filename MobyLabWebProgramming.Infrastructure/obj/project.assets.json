@@ -4081,11 +4081,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotnetbackend\\MobyLabWebProgramming.Infrastructure\\MobyLabWebProgramming.Infrastructure.csproj",
+      "projectUniqueName": "D:\\teatre\\MobyLabWebProgramming.Infrastructure\\MobyLabWebProgramming.Infrastructure.csproj",
       "projectName": "MobyLabWebProgramming.Infrastructure",
-      "projectPath": "D:\\dotnetbackend\\MobyLabWebProgramming.Infrastructure\\MobyLabWebProgramming.Infrastructure.csproj",
+      "projectPath": "D:\\teatre\\MobyLabWebProgramming.Infrastructure\\MobyLabWebProgramming.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "D:\\dotnetbackend\\MobyLabWebProgramming.Infrastructure\\obj\\",
+      "outputPath": "D:\\teatre\\MobyLabWebProgramming.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4107,8 +4107,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {
-              "projectPath": "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj"
+            "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {
+              "projectPath": "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj"
             }
           }
         }

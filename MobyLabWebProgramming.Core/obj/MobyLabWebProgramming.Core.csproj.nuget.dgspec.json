@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {}
+    "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {}
   },
   "projects": {
-    "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {
+    "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj",
+        "projectUniqueName": "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj",
         "projectName": "MobyLabWebProgramming.Core",
-        "projectPath": "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj",
+        "projectPath": "D:\\teatre\\MobyLabWebProgramming.Core\\MobyLabWebProgramming.Core.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "D:\\dotnetbackend\\MobyLabWebProgramming.Core\\obj\\",
+        "outputPath": "D:\\teatre\\MobyLabWebProgramming.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
