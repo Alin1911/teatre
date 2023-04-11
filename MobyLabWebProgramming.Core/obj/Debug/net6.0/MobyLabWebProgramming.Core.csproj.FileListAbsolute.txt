@@ -10,3 +10,15 @@ D:\dotnetbackend\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgrammi
 D:\dotnetbackend\MobyLabWebProgramming.Core\obj\Debug\net6.0\refint\MobyLabWebProgramming.Core.dll
 D:\dotnetbackend\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.pdb
 D:\dotnetbackend\MobyLabWebProgramming.Core\obj\Debug\net6.0\ref\MobyLabWebProgramming.Core.dll
+D:\teatre\MobyLabWebProgramming.Core\bin\Debug\net6.0\MobyLabWebProgramming.Core.deps.json
+D:\teatre\MobyLabWebProgramming.Core\bin\Debug\net6.0\MobyLabWebProgramming.Core.dll
+D:\teatre\MobyLabWebProgramming.Core\bin\Debug\net6.0\MobyLabWebProgramming.Core.pdb
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.csproj.AssemblyReference.cache
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.AssemblyInfoInputs.cache
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.AssemblyInfo.cs
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.csproj.CoreCompileInputs.cache
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.dll
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\refint\MobyLabWebProgramming.Core.dll
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\MobyLabWebProgramming.Core.pdb
+D:\teatre\MobyLabWebProgramming.Core\obj\Debug\net6.0\ref\MobyLabWebProgramming.Core.dll
