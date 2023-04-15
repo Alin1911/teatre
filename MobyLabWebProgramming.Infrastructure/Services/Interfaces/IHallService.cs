@@ -1,16 +1,15 @@
 ﻿using MobyLabWebProgramming.Core.DataTransferObjects;
 using MobyLabWebProgramming.Core.Requests;
 using MobyLabWebProgramming.Core.Responses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MobyLabWebProgramming.Infrastructure.Services.Interfaces
 {
     public interface IHallService
     {
-        Task<ServiceResponse<PagedResponse<HallDTO>>> GetAllHallsAsync(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<HallDTO>> GetHall(Guid id, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<PagedResponse<HallDTO>>> GetHalls(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> AddHall(HallAddDTO hall, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> UpdateHall(HallUpdateDTO hall, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> DeleteHall(Guid id, CancellationToken cancellationToken = default);
     }
 }

@@ -27,7 +27,7 @@ public class InitializerWorker : BackgroundService
         {
             await using var scope = _serviceProvider.CreateAsyncScope(); // Here a new scope is created, this is useful to get new scoped instances.
             var userService = scope.ServiceProvider.GetService<IUserService>(); // Here an instance for a service is requested, it may fail if the component is not declared or
-                                                                                // an exception is thrown on it’s creation.
+            var hallService = scope.ServiceProvider.GetService<IHallService>(); // an exception is thrown on it’s creation.
 
             if (userService == null)
             {

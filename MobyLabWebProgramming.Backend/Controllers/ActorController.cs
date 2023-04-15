@@ -14,21 +14,49 @@ namespace MobyLabWebProgramming.Backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class ActorController : AuthorizedController
+    public class ActorController : ControllerBase
     {
         private readonly IActorService _actorService;
 
-        public ActorController(IUserService userService, IActorService actorService) : base(userService)
+        public ActorController(IActorService actorService)
         {
             _actorService = actorService;
         }
 
         [Authorize]
-        [HttpGet]
-        public async Task<ActionResult<RequestResponse<List<Actor>>>> GetActors([FromQuery] PaginationSearchQueryParams pagination)
+        [HttpGet("{id:guid}")]
+        public async Task<ActionResult<RequestResponse<ActorDTO>>> GetById([FromRoute] Guid id)
         {
-            var actors = await _actorService.GetAllActorsAsync(pagination);
-            return new RequestResponse<List<Actor>>(actors);
+            return this.FromServiceResponse(await _actorService.GetActor(id));
+
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<ServiceResponse<PagedResponse<ActorDTO>>>> GetPage([FromQuery] PaginationSearchQueryParams pagination)
+        {
+            return await _actorService.GetActors(pagination);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<ActionResult<RequestResponse>> Add([FromBody] ActorAddDTO actor)
+        {
+            return this.FromServiceResponse(await _actorService.AddActor(actor));
+        }
+
+        [Authorize]
+        [HttpPut]
+        public async Task<ActionResult<RequestResponse>> Update([FromBody] ActorUpdateDTO actor)
+        {
+            return this.FromServiceResponse(await _actorService.UpdateActor(actor));
+        }
+
+        [Authorize]
+        [HttpDelete("{id:guid}")]
+        public async Task<ActionResult<RequestResponse>> Delete([FromRoute] Guid id)
+        {
+            return this.FromServiceResponse(await _actorService.DeleteActor(id));
         }
     }
 }

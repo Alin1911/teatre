@@ -1,16 +1,16 @@
 ﻿using MobyLabWebProgramming.Core.DataTransferObjects;
 using MobyLabWebProgramming.Core.Requests;
 using MobyLabWebProgramming.Core.Responses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MobyLabWebProgramming.Infrastructure.Services.Interfaces
 {
     public interface IRoleService
     {
-        Task<ServiceResponse<PagedResponse<RoleDTO>>> GetAllRolesAsync(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<RoleDTO>> GetRole(Guid id, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<PagedResponse<RoleDTO>>> GetRoles(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> AddRole(RoleAddDTO role, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> UpdateRole(RoleUpdateDTO role, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> DeleteRole(Guid id, CancellationToken cancellationToken = default);
     }
 }

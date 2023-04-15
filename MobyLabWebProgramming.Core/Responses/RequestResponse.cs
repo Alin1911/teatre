@@ -16,14 +16,7 @@ public class RequestResponse<T>
     /// This is the error message for the error that occurred while responding to the request, if no error occurred this should be null. 
     /// </summary>
     public ErrorMessage? ErrorMessage { get; private init; }
-    public ServiceResponse<PagedResponse<ActorDTO>> Actors { get; }
-
     protected RequestResponse() { }
-
-    public RequestResponse(ServiceResponse<PagedResponse<ActorDTO>> actors)
-    {
-        Actors = actors;
-    }
 
     public static RequestResponse FromError(ErrorMessage? error)
     {

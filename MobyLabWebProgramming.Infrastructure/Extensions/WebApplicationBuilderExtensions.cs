@@ -171,9 +171,14 @@ public static class WebApplicationBuilderExtensions
         builder.Services
             .AddTransient<IUserService, UserService>()
             .AddTransient<IActorService, ActorService>()
+            .AddTransient<IPerformanceService, PerformanceService>()
+            .AddTransient<IPieceService, PieceService>()
+            .AddTransient<IRoleService, RoleService>()
+            .AddTransient<ITicketService, TicketService>()
+            .AddTransient<ITransactionService, TransactionService>()
+            .AddTransient<IHallService, HallService>()
             .AddTransient<ILoginService, LoginService>()
             .AddTransient<IFileRepository, FileRepository>()
-            .AddTransient<IUserFileService, UserFileService>()
             .AddTransient<IMailService, MailService>();
 
         return builder;

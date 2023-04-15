@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using MobyLabWebProgramming.Core.Entities;
-using MobyLabWebProgramming.Core.DataTransferObjects;
+﻿using MobyLabWebProgramming.Core.DataTransferObjects;
 using MobyLabWebProgramming.Core.Responses;
 using MobyLabWebProgramming.Core.Requests;
 
-namespace MobyLabWebProgramming.Infrastructure.Services.Interfaces
+namespace MobyLabWebProgramming.Infrastructure.Services.Interfaces;
+
+public interface IActorService
 {
-    public interface IActorService
-    {
-        Task<ServiceResponse<PagedResponse<ActorDTO>>> GetAllActorsAsync(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
-    }
+    Task<ServiceResponse<ActorDTO>> GetActor(Guid id, CancellationToken cancellationToken = default);
+    Task<ServiceResponse<PagedResponse<ActorDTO>>> GetActors(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+    Task<ServiceResponse> AddActor(ActorAddDTO actor, CancellationToken cancellationToken = default);
+    Task<ServiceResponse> UpdateActor(ActorUpdateDTO actor, CancellationToken cancellationToken = default);
+    Task<ServiceResponse> DeleteActor(Guid id, CancellationToken cancellationToken = default);
 }

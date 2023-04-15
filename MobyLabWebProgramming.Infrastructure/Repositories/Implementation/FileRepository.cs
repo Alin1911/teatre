@@ -36,21 +36,6 @@ public class FileRepository : IFileRepository
         CreateIfNotExists(FileStoragePath); // Create the file storage path if it doesn't exist.
     }
 
-    public ServiceResponse<FileDTO> GetFile(string filePath, string? replacedFileName = default)
-    {
-        try
-        {
-            var path = Path.Join(FileStoragePath, filePath);
-
-            return File.Exists(path)
-                ? ServiceResponse<FileDTO>.ForSuccess(new(File.Open(path, FileMode.Open), replacedFileName ?? Path.GetFileName(filePath)))
-                : ServiceResponse<FileDTO>.FromError(CommonErrors.FileNotFound);
-        }
-        catch
-        {
-            return ServiceResponse<FileDTO>.FromError(CommonErrors.TechnicalSupport);
-        }
-    }
 
     public ServiceResponse<FileDTO> SaveFileAndGet(IFormFile file, string directoryPath)
     {

@@ -13,7 +13,6 @@ public interface IFileRepository
     /// <summary>
     /// GetFile gets an file from the filesystem and may replace the file name if replacedFileName is not null.
     /// </summary>
-    public ServiceResponse<FileDTO> GetFile(string filePath, string? replacedFileName = default);
     /// <summary>
     /// SaveFileAndGet saves an file from a form to the filesystem given the directory location where to store it and returns a DTO with an open file stream to it.
     /// </summary>

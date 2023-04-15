@@ -63,6 +63,7 @@ public class UserService : IUserService
         {
             Id = result.Id,
             Email = result.Email,
+            Nickname = result.Nickname,
             Name = result.Name,
             Role = result.Role
         };
@@ -95,6 +96,7 @@ public class UserService : IUserService
         {
             Email = user.Email,
             Name = user.Name,
+            Nickname = user.Nickname,
             Role = user.Role,
             Password = user.Password
         }, cancellationToken); // A new entity is created and persisted in the database.

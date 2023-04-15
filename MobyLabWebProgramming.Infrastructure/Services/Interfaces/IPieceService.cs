@@ -1,16 +1,16 @@
 ﻿using MobyLabWebProgramming.Core.DataTransferObjects;
 using MobyLabWebProgramming.Core.Requests;
 using MobyLabWebProgramming.Core.Responses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MobyLabWebProgramming.Infrastructure.Services.Interfaces
 {
     public interface IPieceService
     {
-        Task<ServiceResponse<PagedResponse<PieceDTO>>> GetAllPiecesAsync(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<PieceDTO>> GetPiece(Guid id, CancellationToken cancellationToken = default);
+        Task<ServiceResponse<PagedResponse<PieceDTO>>> GetPieces(PaginationSearchQueryParams pagination, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> AddPiece(PieceAddDTO piece, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> UpdatePiece(PieceUpdateDTO piece, CancellationToken cancellationToken = default);
+        Task<ServiceResponse> DeletePiece(Guid id, CancellationToken cancellationToken = default);
     }
 }
