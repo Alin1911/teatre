@@ -46,7 +46,7 @@ public class HallController : ControllerBase
         return this.FromServiceResponse(await _hallService.AddHall(hall));
     }
 
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [HttpPut]
     public async Task<ActionResult<RequestResponse>> Update([FromBody] HallUpdateDTO hall)
     {

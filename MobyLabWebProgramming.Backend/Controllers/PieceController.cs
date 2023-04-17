@@ -42,7 +42,7 @@ public class PieceController : ControllerBase
         return this.FromServiceResponse(await _pieceService.AddPiece(piece));
     }
 
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [HttpPut]
     public async Task<ActionResult<RequestResponse>> Update([FromBody] PieceUpdateDTO piece)
     {

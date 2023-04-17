@@ -45,7 +45,7 @@ namespace MobyLabWebProgramming.Backend.Controllers
             return this.FromServiceResponse(await _actorService.AddActor(actor));
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpPut]
         public async Task<ActionResult<RequestResponse>> Update([FromBody] ActorUpdateDTO actor)
         {

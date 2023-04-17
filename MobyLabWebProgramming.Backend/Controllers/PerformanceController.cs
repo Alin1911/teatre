@@ -42,7 +42,7 @@ public class PerformanceController : ControllerBase
         return this.FromServiceResponse(await _performanceService.AddPerformance(performance));
     }
 
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [HttpPut]
     public async Task<ActionResult<RequestResponse>> Update([FromBody] PerformanceUpdateDTO performance)
     {
